@@ -2,24 +2,47 @@
    display: grid; 
    height: 100vh;
    gap: 5px;
+   grid-template-columns: 60% 40%;
+   grid-template-rows: 15% 20% 55% 10%;
    grid-template-areas:
-   'nav nav nav'
-   'sctn1 sctn1 as'
-   'sctn2 sctn2 as'
-   'ft ft ft'
+   'nav nav'
+   'sctn1 as'
+   'sctn2 as'
+   'ft ft'
+}
+
+body {
+    background-color: rgb(182, 229, 239);
 }
 
 nav {
     grid-area: nav;
-    background-color: aqua;
+    background-color: rgb(255, 255, 237);
+
+}
+
+.nav_links {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
 }
 
 .sctn1 {
     grid-area: sctn1;
-    background-color: aqua;
+    background-color: rgb(255, 255, 237);
 }
 
 .sctn2 {
     grid-area: sctn2;
-    background-color: aqua;
+    background-color: rgb(255, 255, 237);
+}
+
+aside {
+    grid-area: as;
+    background-color: rgb(255, 255, 237);
+}
+
+footer {
+    grid-area: ft;
+    background-color: rgb(255, 255, 237);
 }
